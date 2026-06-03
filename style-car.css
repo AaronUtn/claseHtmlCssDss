@@ -127,7 +127,7 @@ con los paddign posicionamos la imagen la letra
 
 */
 .car-banner{
-    background-image: url('../iamgens-clase-pag-web/1978-ford-mustang-restomod.jpg');
+    background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web/1978-ford-mustang-restomod.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -150px;
@@ -228,19 +228,19 @@ compartiendo el mismo stylo
     width: 300px;
 }
 #seguros{
-    background-image: url('../iamgens-clase-pag-web/seguros.png');
+    background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web//seguros.png');
 }
 
 #carroceria{
-    background-image: url('../iamgens-clase-pag-web/carroceria.png');
+    background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web//carroceria.png');
 }
 
 #taller{
-    background-image: url('../iamgens-clase-pag-web/taller.png');
+    background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web//taller.png');
 }
 
 #neumaticos{
-    background-image: url('../iamgens-clase-pag-web/neumaticos.png');
+    background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web//neumaticos.png');
 }
 
 #seguros p,#carroceria p,#taller p,#neumaticos p{
@@ -266,7 +266,7 @@ compartiendo el mismo stylo
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
-    background-image: url('../iamgens-clase-pag-web/contact-background.svg');
+    background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web//contact-background.svg');
     background-size: cover;
     /* height: 400px; */
     padding: 80px;
@@ -357,7 +357,7 @@ contacto
     }
 
     .car-banner{
-        background-image: url('../iamgens-clase-pag-web/auto-menu.jpg');
+        background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web/auto-menu.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw;
