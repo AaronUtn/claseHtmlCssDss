@@ -1,0 +1,400 @@
+.font-family-prata{
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-size: 45px;
+    font-style: normal;
+}
+.font-family-barlow{
+    font-family: 'Barlow', sans-serif;
+}
+.font-family-barlow-blue{
+    font-family: 'Barlow', sans-serif;
+    color: rgb(56, 127, 181);
+}
+
+body,html{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Barlow',sans-serif;
+    
+}
+/*
+poscion fixed es sobre el eje z*/
+/*
+el atributo display puede ser inline no se puede aplicar el ancho, block (se le puede aplicar stylos padding, ancho,largo,alto), inline-block (tiene porpeidades de ambos), flex
+display flex aplica propiedades del ancho de la pantalla va hacer flexible dependiendo el ancho
+width 100vw es un procentaje que hace referencia al tamñao de la pantalla, no referenciasmos al padre
+esto se puede hacer porque le indicamos que sea flex
+
+flex direcction tenemos filas y columnas 
+
+*/
+/*
+html tiene estructura de arbol eso nos permite tambien llamar husando esa estructura
+por ejempo si dentro del header tenemos una img seria header img
+*/
+/*
+border son los bordes que puede tener nuestra etiquetas
+existe border que lo hace para todo alto,najo,costados 
+existen de manera especifica
+border-bottom para la parte de abajo de la etiqueta
+---
+dentro de la pagina podemos tener posiciones relativos y absolutos y fijos
+si no se especifican son auto
+los relativos relacion de su contenedor
+los absolutos en relacion a todo la pagina ponele 
+fixed lo deja fijo
+---
+margin y paddin
+margin es externo de nuestro header a¿hacia afuera
+e l padding es de des donde termina hacia adentro
+se puede llamar por paddign general en todos lados aplica lo mismo
+por particular pading left 
+paddign teneindo en cuenata todos las direccion: arriba, abjo, izq,derecha
+----
+justify content
+necesito separar la lista y el logo
+sirve para alineal los elementos 
+porque tenemos flex
+jc tiene felx end todo al final, space between pone un espacio entre el medio y los elemenos quedan en las puntas
+space around espacio al rededor de los elentos
+de forma orizontal
+
+aling itemes los aline al centro mismo nivel
+
+*/
+header{
+background-color: aliceblue;
+position: fixed;
+display: flex;
+width: 98%;
+height: 35px;
+flex-direction: row;
+border-bottom: 1 px solid rgb(56,127,181) ;
+padding: 15px;
+justify-content: space-between;
+align-items: center;
+}
+
+header img{
+    width: 100px;
+    height: auto;
+}
+/*list style none le saca el stilo de la lista le saco los bulles*/
+nav, nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: rgb(56,127,181);
+}
+
+/*
+
+*/
+.navigation-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+/*esto no me lo muestra en la pagina por none cuando achiquemos con query media se cambiaria*/
+.menu-button{
+    display: none;
+}
+
+.navigation-menu li{
+    margin: 5px 10px 5px 10px
+}
+
+.navigation-menu li:hover, .navigation-menu li a:hover{
+    color: rgba(56,127,181,0.573)
+}
+
+
+
+/*
+las imagenes se pueden poenr en el html llamndao o ponerlo como fondo de un elemnto desde css
+la facilidad de usarlo como fondo se puede poner cosas sobre ella
+con no reapt pedimos que no repeta la imagen para cubrir el contendor
+cover: para que cubria todo el contendor
+100 vw de la pantalla 
+80vh con referencia al alto de la pantalla 80 porciento de la pantalla
+con los paddign posicionamos la imagen la letra
+
+*/
+.car-banner{
+    background-image: url('../iamgens-clase-pag-web/1978-ford-mustang-restomod.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -150px;
+    width: 100vw;
+    height: 80 vh;
+    padding-bottom: 30%;
+    color:aliceblue;
+    background-color: rgb(233,237,248);
+}
+
+.landing-page-title{
+    position:relative ;
+    top: 80px;
+    left: 7%;
+    color: #e3e3e3;
+}
+
+.cars{
+    width: 100vw;
+    padding-bottom: 80px;
+    background-color: rgb(233,237,248);
+}
+/*
+de esta manera a la clase cars le dijo a todos los h4 que tenga 
+le ponga lo mismos stilos y que tambien lo haga con services h4
+compartiendo el mismo stylo
+*/
+.cars h4,.services h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(56,127,181);
+    margin-top: 0px;
+    padding-top: 60px;
+}
+
+.car-options-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.car-options-nav li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56,127,181);
+    min-width: 25%;
+    padding: 15px;
+    color: #e3e3e3;
+    border-radius: 5px;
+    height: 40px;
+    
+}
+
+/*se aplican cuando pasamos el mouse por encima*/
+.car-options-nav li:hover{
+    background-color:  rgba(56,127,181,0.573);
+    cursor: pointer;
+}
+
+.car-options-nav li img{
+    margin-right: 10px;
+}
+
+.services{
+    width: 100 vw;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.services ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services ul li{
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+}
+
+.services ul li:hover{
+    cursor: pointer;
+}
+
+#seguros,#carroceria,#taller,#neumaticos{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+}
+#seguros{
+    background-image: url('../iamgens-clase-pag-web/seguros.png');
+}
+
+#carroceria{
+    background-image: url('../iamgens-clase-pag-web/carroceria.png');
+}
+
+#taller{
+    background-image: url('../iamgens-clase-pag-web/taller.png');
+}
+
+#neumaticos{
+    background-image: url('../iamgens-clase-pag-web/neumaticos.png');
+}
+
+#seguros p,#carroceria p,#taller p,#neumaticos p{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    color: aliceblue;
+}
+.flex-row{ /* la idea es poder generalizar clases, no tener que hacer una clase para cada elemento */ 
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-div{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    background-image: url('../iamgens-clase-pag-web/contact-background.svg');
+    background-size: cover;
+    /* height: 400px; */
+    padding: 80px;
+}
+#contact-div h4{
+    font-size: 40px;
+    font-weight: 500;
+}
+#contact-form{
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+
+    
+}
+#contact-form input, #contact-form select, #contact-form textarea{
+    margin:15px;
+    border: 0px;
+    font-size: 18px;
+    padding: 3px;
+    border-radius: 5px;
+    color: rgb(56, 127, 181);
+}
+#contact-form textarea{
+    resize: none;
+    height: 70px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgb(56, 127, 181);
+    opacity: 0.5;
+}
+option:first-child{
+    color: rgba(56, 127, 181, 0.5);
+}
+
+#contact-form h5{
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn{
+    background-color: #387fb5;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    color:aliceblue;
+    width: 80px;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(56, 127, 181);
+    color: aliceblue;
+    text-align: right;
+}
+
+footer p{
+    margin-right: 35px;;
+}
+
+/*
+cuando la pantalla tenga un tamaño penor a tanto pixeles
+aplicame los siguientes stylos
+de esta manera va aplicar todos los stylos de los primeros 
+pero aquellos que tengan que cambiar utilizan estos nuevos
+
+ademas como todo lo que definimos como fila podemos trasnformalo a columna
+se le puede aplicar a la listas
+a los services
+contacto
+
+
+*/
+@media (max-width: 768px) {
+    .car-options-nav{
+        flex-direction: column;
+    }
+    .car-options-nav li{
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        padding: 15px;
+        color: #e3e3e3;
+        margin-bottom: 20px;
+    }
+
+    .car-banner{
+        background-image: url('../iamgens-clase-pag-web/auto-menu.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        margin-top: 50px;
+        padding: 0px;
+        color: aliceblue;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+        width:35px;
+        padding: 10px;
+     }
+     .services ul{
+        flex-direction: column;
+     }
+
+     .services ul li{
+        margin-bottom: 30px;
+     }
+
+     .cars h4{
+        padding-top: 35px;
+     }
+
+     #contact-div{
+        flex-direction: column;
+        padding-top: 0px;
+     }
+
+     #contact-form{
+        width: 70vw;
+     }
+    
+}
+

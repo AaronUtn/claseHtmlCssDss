@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car zero</title>
+    <link rel="icon" href="../iamgens-clase-pag-web/icono-auto-pag.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style-car.css">
+</head>
+<body>
+    <header>
+        <!--las iamgenes se llaman-->
+        <!--alt es una deescripcion cuando no se carga la pagina y para accesibilidad para perosnas con discapidad visual-->
+        <img src="../iamgens-clase-pag-web/logo-car-header.jpg" alt="logo-empresa">
+        <nav>
+            <ul class="navigation-menu">
+                <li>Comprar</li>
+                <li>Vende auto</li>
+                <li>Alquilá</li>
+                <li><a href="#servicios">Servicios</a></li> <!--referencia al id de servicios para escroll de la pagina-->
+                <li>Nosotros</li>
+            </ul>
+        </nav>
+            <img src="../iamgens-clase-pag-web/menu-icon.png" alt="menu" class="menu-button">
+    </header>
+    <main>
+        <!--div divisor no tiene uso especifico-->
+        <!--uso de distitnos div para engolbarlo a todo lo de adentro para un fondo-->
+
+        <div class="car-banner">
+            <div class="landing-page-title">
+                <h1 class="font-family-prata">Tu auto nuevo<br>
+                    Y todo los que necesitas <br>
+                    En un solo lugar
+                </h1>
+            </div>
+        </div>
+    
+        <section class="cars">
+            <h4>Autos</h4>
+                <ul class="car-options-nav">
+                    <li>
+                        <img src="../iamgens-clase-pag-web/user-car.png" alt="used-cars">
+                        Usados
+                    </li>
+                    <li>
+                        <img src="../iamgens-clase-pag-web/car-new.png" alt="new car">
+                        0 Km
+                    </li>
+                    <li>
+                        <img src="../iamgens-clase-pag-web/plan-ahorro.png" alt="plan de ahorro">
+                        Plan de ahorro
+                    </li>
+                </ul>  
+        </section>
+
+        <section class="services" id="servicios">
+            <h4>SERVICIOS</h4>
+            <ul>
+                <li id="seguros">
+                    <p>SEGUROS</p>
+                </li>
+                <li id="carroceria">
+                    <p>CARROCERIA</p>
+                </li>
+                <li id="taller">
+                    <p>TALLER <br>Y <br>REPUESTOS</p>
+                </li>
+                <li id="neumaticos">
+                    <p>NEUMATICOS</p>
+                </li>
+            </ul>
+        </section>
+        <div class="flex-row cwnwe-flex-row" id="contact-div">
+            <h4>CONTACTO</h4>
+            <form action="your_url" method="post" id="contact-form" class="flex-column">
+                <h5>Envienos su consulta</h5>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email" required>
+                <input type="tel"placeholder="Telefono de contacto">
+                <select name="servicio" id="servicio" required>
+                    <option value="" disabled selected hidden class="select-placeholder">Elija el servicio de su interés</option>
+                    <option value="autos0km"> Autos 0km</option>
+                    <option value="usados"> usados</option>
+                    <option value="planAhorro">plan de ahorro</option>
+                    <option value="servicioCarroceria"> servicio de carrocería</option>
+                    <option value="tallerRespuestos"> taller y respuestos</option>
+                    <option value="seguros">seguros</option>
+                    <option value="neumaticos">neumáticos</option>
+                </select>
+                <textarea name="message" id="message" placeholder="Escribinos su consulta" class="font-family-barlow-blue"></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>         
+    </main>
+    <footer>
+        <p>Todos los derechos reservados.</p>
+        <p>CarZero S.R.L</p>
+    </footer>
+</body>
+<!--seguir 2:14:00-->
+</html>
