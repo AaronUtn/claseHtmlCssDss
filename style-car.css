@@ -130,10 +130,11 @@ con los paddign posicionamos la imagen la letra
     background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web/1978-ford-mustang-restomod.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0px -150px;
+    /*background-position: 0px -150px;*/
+    background-position: center;
     width: 100vw;
-    height: 80 vh;
-    padding-bottom: 30%;
+    min-height: 80vh;
+    /*padding-top: 50px;*/
     color:aliceblue;
     background-color: rgb(233,237,248);
 }
@@ -356,13 +357,26 @@ contacto
         margin-bottom: 20px;
     }
 
+    .landing-page-title h1 {
+    margin: 0;
+    /* Al usar clamp(), el navegador calcula el tamaño automáticamente. 
+       No necesitas cambiar el font-size en la Media Query */
+    font-size: clamp(28px, 6vw, 50px); 
+    line-height: 1.2;
+
+    /* LAS PROPIEDADES DE RESCATE: para evitar que se desbrde el h1*/
+    word-wrap: break-word;       /* Fuerza a las palabras largas a cortarse si no entran */
+    overflow-wrap: break-word;
+    }
+
     .car-banner{
         background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web/auto-menu.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100vw;
-        margin-top: 50px;
+        width:100vw;
+        margin-top:50px;
         padding: 0px;
+        min-height: 50vw;
         color: aliceblue;
     }
 
