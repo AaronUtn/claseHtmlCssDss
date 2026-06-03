@@ -137,13 +137,28 @@ con los paddign posicionamos la imagen la letra
     /*padding-top: 50px;*/
     color:aliceblue;
     background-color: rgb(233,237,248);
+    display: flex;
+    align-items: center;
 }
 
 .landing-page-title{
-    position:relative ;
+    padding-left: 7%;
+    padding-right: 7%;
+    color: #e3e3e3;
+   /* position:relative ;
     top: 80px;
     left: 7%;
-    color: #e3e3e3;
+    */
+}
+
+/* El h1 lo dejamos ACÁ, afuera de la media query, para que sea inteligente en toda pantalla */
+.landing-page-title h1 {
+    margin: 0;
+    /* Bajamos el mínimo a 20px para pantallas menores a 300px */
+    font-size: clamp(20px, 6vw, 45px); 
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .cars{
@@ -345,6 +360,17 @@ contacto
 
 */
 @media (max-width: 768px) {
+  
+
+    .car-banner{
+        background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web/auto-menu.jpg');
+        width:100vw;
+        margin-top:50px;
+        padding: 0px;
+        min-height: 50vh;
+        color: aliceblue;
+    }
+
     .car-options-nav{
         flex-direction: column;
     }
@@ -367,17 +393,7 @@ contacto
     /* LAS PROPIEDADES DE RESCATE: para evitar que se desbrde el h1*/
     word-wrap: break-word;       /* Fuerza a las palabras largas a cortarse si no entran */
     overflow-wrap: break-word;
-    }
-
-    .car-banner{
-        background-image: url('../claseHtmlCssDss/iamgens-clase-pag-web/auto-menu.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width:100vw;
-        margin-top:50px;
-        padding: 0px;
-        min-height: 50vw;
-        color: aliceblue;
+    hyphens: auto;
     }
 
     header nav{
